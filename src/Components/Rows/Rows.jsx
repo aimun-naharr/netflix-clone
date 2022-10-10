@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import './rows.css'
 import instance from '../../lib/axios';
+import Loader from '../Loader';
 
 const Rows = ({title, fetchUrls, isLarge}) => {
     const [movies, setMovies]=useState([])
+ 
     const baseUrl='https://image.tmdb.org/t/p/original/'
   
     useEffect(()=>{

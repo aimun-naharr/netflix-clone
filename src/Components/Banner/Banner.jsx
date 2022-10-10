@@ -2,9 +2,11 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import  instance from "../../lib/axios";
 import requests from "../../lib/requests";
+import Loader from "../Loader";
 import "./banner.css";
 const Banner = () => {
   const [movie, setMovie]=useState([])
+ 
   function shorten(string, n) {
    return string.length > n ? string.substring(0, n-1 ) + "..." : string;
   

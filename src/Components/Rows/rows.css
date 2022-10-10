@@ -4,6 +4,7 @@
     overflow: hidden;
   margin-top: -10px;
   z-index: 2;
+  background-color: black;
 }
 
 .movie_row{

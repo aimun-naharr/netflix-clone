@@ -11,7 +11,7 @@ const HomeScreen = () => {
         <div className=''>
            <Nav/>
             <Banner/>
- <Rows title={'Netflix Originals'} fetchUrls={requests.fetchNetflixOriginals}/>
+ <Rows title={'Netflix Originals'} fetchUrls={requests.fetchNetflixOriginals} isLarge/>
  <Rows title={'Trending'} fetchUrls={requests.fetchTrending}/>
  <Rows title={'Top Rated'} fetchUrls={requests.fetchTopRated}/>
  <Rows title={'Comedy'} fetchUrls={requests.fetchComedyMovies}/>

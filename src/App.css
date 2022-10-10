@@ -1,4 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;700&family=Kanit:wght@300;400;500&family=Nunito:ital,wght@0,500;0,600;1,400&family=Silkscreen:wght@400;700&family=Ubuntu:wght@400;500;700&display=swap');
 body{
-  /* background-color: black;
-  color: white; */
+  background-color: black;
+  color: white;
+  font-family: 'Ubuntu', sans-serif;
+  transition: all;
+}
+.App::-webkit-scrollbar{
+ display: none;
 }

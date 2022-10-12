@@ -1,0 +1,49 @@
+.profileScreen{
+   height: 100vh;
+   
+}
+
+.profileScreen_body{
+    margin-top: 11%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 55%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 600px;
+}
+.profileScreen_body>h1{
+border-bottom: 1px solid gray;
+font-size: 2rem;
+}
+.profileScreen_info{
+    display: flex;
+   text-align: left;
+   
+}
+.profileScreen_details{
+   margin-left: 10px;
+    flex: 1;
+}
+.profileScreen_details>h3{
+   
+    height: 30px;
+    padding-top: 8px;
+    padding-left: 5px;
+    font-size: 1rem;
+    background-color: gray;
+}
+.profileScreen_avatar{
+   width: 100px;
+}
+.profileScreen_sign0ut{
+    width: 100%;
+    padding: 10px 16px;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}

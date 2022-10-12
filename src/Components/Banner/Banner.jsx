@@ -28,27 +28,31 @@ fetchMovie()
   },[])
  
   return (
-    <header
-      className="banner"
-      style={{
-        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}" )`,
-        backgroundSize:'cover',
-       
-      }}
-    >
-      <div className="banner_contents">
-        <h1 className="banner_title">{movie?.name || movie?.original_name}</h1>
-        <button className="banner_button">Play</button>
-        <button className="banner_button">My list</button>
-        <p className="banner_desc">
-          {shorten(
-            `${movie?.overview}`,
-            150
-          )}
-        </p>
-      </div>
-        <div className="fade_button"></div>
-    </header>
+   <>
+   {
+    (movie?.backdrop_path && movie?.name && movie?.original_name) &&  <header
+    className="banner"
+    style={{
+      backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path && movie.backdrop_path}" )`,
+      backgroundSize:'cover',
+     
+    }}
+  >
+    <div className="banner_contents">
+      <h1 className="banner_title">{movie?.name || movie?.original_name}</h1>
+      <button className="banner_button">Play</button>
+      <button className="banner_button">My list</button>
+      <p className="banner_desc">
+        {shorten(
+          `${movie?.overview}`,
+          150
+        )}
+      </p>
+    </div>
+      <div className="fade_button"></div>
+  </header>
+   }
+   </>
   );
 };
 

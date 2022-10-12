@@ -2,7 +2,7 @@
     width: 250px;
     background: rgba(0,0,0, 0.8);
  display: grid;
-   padding: 16px 20px;
+   padding: 20px 26px;
     z-index: 1;
 }
 .signupScreen>h1{
@@ -18,6 +18,8 @@
 .signupScreen>form>input{
     padding: 12px 20px;
     border-radius: 3px;
+    border: none;
+    outline: none;
 }
 .signupScreen_btn{
     background-color: #e50914;
@@ -25,4 +27,15 @@
     font-weight: bold;
     cursor: pointer;
     font-size: 1rem;
+}
+.signupScreen>form>p{
+    text-align: left;
+    transition: all 1s;
+}
+.new_netflix{
+    color: gray;
+}
+.sign_up_link:hover{
+text-decoration: underline;
+cursor: pointer;
 }

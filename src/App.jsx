@@ -4,7 +4,7 @@ import LoginScreen from "./Pages/loginScreen/LoginScreen";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import Loader from "./Components/Loader";
-import { auth } from "../firebase";
+import { auth } from "../firebase.init";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logOut, selectUser } from "./features/userSlice";

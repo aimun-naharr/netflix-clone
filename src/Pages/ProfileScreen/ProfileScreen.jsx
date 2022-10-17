@@ -4,7 +4,7 @@ import Nav from '../../Components/nav/Nav';
 import { selectUser } from '../../features/userSlice';
 import './ProfileScreen.css'
 import {  signOut } from "firebase/auth";
-import { auth } from '../../../firebase';
+import { auth } from '../../../firebase.init';
 function ProfileScreen(props) {
     
     const user=useSelector(selectUser)
